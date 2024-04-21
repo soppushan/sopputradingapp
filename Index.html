@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Angular Material CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@angular/material@13.0.0-alpha.7/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Add your custom styles here */
+    .dashboard-container {
+      padding: 20px;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, GitHub Pages Shan!</h1>
-    <p>This is a simple HTML application hosted on GitHub Pages.</p>
+  <div class="container-fluid dashboard-container">
+    <h1>Dashboard</h1>
+    <div class="row">
+      <!-- Bootstrap Card with Angular Material Components -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Angular Material Card</h5>
+            <p class="card-text">This is a sample card using Angular Material components within Bootstrap.</p>
+            <button mat-raised-button color="primary">Primary Button</button>
+            <button mat-raised-button color="accent">Accent Button</button>
+          </div>
+        </div>
+      </div>
+      <!-- Another Bootstrap Card with Angular Material Components -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Another Angular Material Card</h5>
+            <p class="card-text">This is another sample card using Angular Material components within Bootstrap.</p>
+            <mat-form-field appearance="fill">
+              <mat-label>Material Input</mat-label>
+              <input matInput placeholder="Placeholder">
+            </mat-form-field>
+            <mat-select placeholder="Select">
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+            </mat-select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Angular Material JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@angular/material@13.0.0-alpha.7/bundles/material.umd.js"></script>
 </body>
 </html>
